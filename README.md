@@ -1,9 +1,5 @@
 # competitive-programming
-Great idea, bro! Consistently uploading daily programming codes is a great way to build your portfolio and show consistency.
 
-Here’s a **clean, professional `README.md`** template for your GitHub repository:
-
----
 
 ```markdown
 # 🧠 Daily Programming Practice
