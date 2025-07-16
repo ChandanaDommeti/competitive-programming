@@ -1,7 +1,3 @@
-# competitive-programming
-
-
-```markdown
 # 🧠 Daily Programming Practice
 
 Welcome to my daily programming repository!  
@@ -25,24 +21,6 @@ To solve at least **one programming problem every day** and commit the solution 
   - Custom challenges
 - 🧠 Solutions in **Python / C++ / Java** (depending on the day)
 
----
-
-## 🗂️ Folder Structure
-
-```
-
-daily-codes/
-│
-├── 2025-07-16/
-│   └── two\_sum.py
-│
-├── 2025-07-15/
-│   ├── reverse\_string.cpp
-│   └── palindrome\_check.py
-│
-└── ...
-
-```
 
 ---
 
@@ -79,4 +57,11 @@ This is my personal log, but if you’d like to:
 - Improve a solution
 - Share feedback
 
+Feel free to open an issue or pull request!
+
+
+
+---
+
+_“Practice isn’t the thing you do once you’re good. It’s the thing you do that makes you good.”_
 
