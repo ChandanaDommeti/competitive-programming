@@ -57,7 +57,6 @@ This is my personal log, but if you’d like to:
 - Improve a solution
 - Share feedback
 
-Feel free to open an issue or pull request!
 
 
 
