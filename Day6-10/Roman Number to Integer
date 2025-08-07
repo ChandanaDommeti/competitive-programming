@@ -1,0 +1,50 @@
+Roman Number to Integer
+Difficulty: EasyAccuracy: 43.31%Submissions: 203K+Points: 2Average Time: 20m
+Given a string s in Roman number format, your task is to convert it to an integer. Various symbols and their values are given below.
+Note: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000
+
+Examples:
+
+Input: s = "IX"
+Output: 9
+Explanation: IX is a Roman symbol which represents 10 – 1 = 9.
+Input: s = "XL"
+Output: 40
+Explanation: XL is a Roman symbol which represents 50 – 10 = 40.
+Input: s = "MCMIV"
+Output: 1904
+Explanation: M is 1000, CM is 1000 – 100 = 900, and IV is 4. So we have total as 1000 + 900 + 4 = 1904.
+Constraints:
+1 ≤ roman number ≤ 3999
+s[i] belongs to [I, V, X, L, C, D, M]
+
+class Solution {
+    public int romanToDecimal(String s) {
+        // code here
+        Map<Character, Integer> roman = new HashMap<>();
+        roman.put('I', 1);
+        roman.put('V', 5);
+        roman.put('X', 10);
+        roman.put('L', 50);
+        roman.put('C', 100);
+        roman.put('D', 500);
+        roman.put('M', 1000);
+
+        int n = s.length();
+        int result = roman.get(s.charAt(n - 1)); 
+
+        for (int i = n - 2; i >= 0; i--) {
+            int curr = roman.get(s.charAt(i));
+            int next = roman.get(s.charAt(i + 1));
+
+            if (curr < next) {
+                result -= curr;
+            } else {
+                result += curr;
+            }
+        }
+
+        return result;
+    }
+}
+
