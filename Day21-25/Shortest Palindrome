@@ -1,0 +1,43 @@
+214. Shortest Palindrome
+Solved
+Hard
+Topics
+premium lock icon
+Companies
+You are given a string s. You can convert s to a palindrome by adding characters in front of it.
+
+Return the shortest palindrome you can find by performing this transformation.
+
+ 
+
+Example 1:
+
+Input: s = "aacecaaa"
+Output: "aaacecaaa"
+Example 2:
+
+Input: s = "abcd"
+Output: "dcbabcd"
+ 
+
+Constraints:
+
+0 <= s.length <= 5 * 104
+s consists of lowercase English letters only.
+
+class Solution {
+    public String shortestPalindrome(String s) {
+        int l=0;
+        int n=s.length();
+        for(int r=n-1; r>=0;r--){
+            if(s.charAt(l)==s.charAt(r)) {
+                   l++;
+            }
+        }
+        if(l==n)    return s;
+        String nonpal=s.substring(l);
+        String pal=s.substring(0,l);
+        StringBuilder res=new StringBuilder(nonpal);
+        return res.reverse().append(pal).toString();
+    }
+}
