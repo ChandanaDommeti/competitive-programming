@@ -12,7 +12,7 @@ To solve at least **one programming problem every day** and commit the solution 
 
 ## 💻 What You'll Find
 
-- 📌 **Daily folders** with date-wise solutions
+- 📌 **Daily folders** with day-wise solutions
 - 📚 Problems from various platforms like:
   - LeetCode
   - HackerRank
@@ -27,10 +27,9 @@ To solve at least **one programming problem every day** and commit the solution 
 ## 🧰 Languages & Tools
 
 - Python 🐍
-- C++ 💻
 - Java ☕
 - Git & GitHub 🌐
-- VSCode / Jupyter / CLI
+- VSCode 
 
 ---
 
